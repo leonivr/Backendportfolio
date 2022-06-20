@@ -11,9 +11,9 @@ public class Experiencia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nombre_empresa;
-    private String fecha_inicio;
-    private String fecha_fin;
+    private String nombreEmpresa;
+    private String fechaInicio;
+    private String fechaFin;
     private String descripcion;
     
     public Long getId() {
@@ -23,22 +23,22 @@ public class Experiencia {
         this.id = id;
     }
     public String getNombreEmpresa() {
-        return nombre_empresa;
+        return nombreEmpresa;
     }
     public void setNombreEmpresa(String nombreEmpresa) {
-        this.nombre_empresa = nombreEmpresa;
+        this.nombreEmpresa = nombreEmpresa;
     }
     public String getFechaInicio() {
-        return fecha_inicio;
+        return fechaInicio;
     }
     public void setFechaInicio(String fechaInicio) {
-        this.fecha_inicio = fechaInicio;
+        this.fechaInicio = fechaInicio;
     }
     public String getFechaFin() {
-        return fecha_fin;
+        return fechaFin;
     }
     public void setFechaFin(String fechaFin) {
-        this.fecha_fin = fechaFin;
+        this.fechaFin = fechaFin;
     }
     public String getDescripcion() {
         return descripcion;
@@ -46,6 +46,5 @@ public class Experiencia {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-
     
 }
